@@ -17,7 +17,7 @@ RUN apt-get update -y -q && apt-get -y dist-upgrade && apt-get install -y -q  \
         djvulibre-bin \
         && apt-get -y autoremove && apt-get clean
 
-RUN sh -c 'curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
+RUN sh -c 'curl -sL https://deb.nodesource.com/setup_6.x | bash -'
 RUN apt-get install -y -q nodejs
 
 RUN curl -s /tmp/pst.tgz http://www.five-ten-sg.com/libpst/packages/libpst-0.6.69.tar.gz > /tmp/pst.tgz \
