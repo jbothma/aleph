@@ -1,4 +1,4 @@
-FROM alephdata/base:1.2
+FROM jbothma/alephdata-data-base:tesseract4alpha
 MAINTAINER Friedrich Lindenberg <friedrich@pudo.org>
 ENV DEBIAN_FRONTEND noninteractive
 
