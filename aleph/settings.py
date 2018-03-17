@@ -157,3 +157,5 @@ QUEUE_ROUTING_KEY = 'worker.process'
 
 BROKER_URI = 'amqp://guest:guest@localhost:5672//'
 BROKER_URI = env.get('ALEPH_BROKER_URI', BROKER_URI)
+
+AWS_SQS_REGION = env.get('ALEPH_BROKER_REGION', 'eu-west-1')

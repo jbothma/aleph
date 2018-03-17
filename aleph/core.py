@@ -51,6 +51,7 @@ def create_app(config={}):
         # broker_connection_retry=False,
         broker_connection_max_retries=3,
         broker_pool_limit=None,
+        broker_transport_options={'region': settings.AWS_SQS_REGION},
         task_always_eager=settings.EAGER,
         task_eager_propagates=True,
         task_ignore_result=True,
